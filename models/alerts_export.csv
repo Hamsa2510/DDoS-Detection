@@ -1,0 +1,21 @@
+time,ip,type,subtype,reason
+14:01:05,192.168.1.100,BLOCK,HTTP Flood (Slowloris),Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+13:59:33,192.168.1.122,BLOCK,High-Rate Flood,Model: High-Rate DDoS — High-Rate Flood (96.2%)
+13:59:24,192.168.1.121,BLOCK,High-Rate Flood,Model: High-Rate DDoS — High-Rate Flood (88.4%)
+13:59:15,192.168.1.120,BLOCK,Rule Violation,Rule: Adaptive: UDP flood rate=7027
+13:59:13,192.168.1.119,BLOCK,High-Rate Flood,Model: High-Rate DDoS — High-Rate Flood (91.6%)
+13:59:04,192.168.1.118,BLOCK,Rule Violation,Rule: Adaptive: Tiny packet=8 < 20
+13:59:02,192.168.1.117,BLOCK,High-Rate Flood,Model: High-Rate DDoS — High-Rate Flood (95.6%)
+13:58:54,192.168.1.116,BLOCK,HTTP Flood (Slowloris),Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.0%)
+13:58:44,192.168.1.115,BLOCK,ICMP Fragmentation,Model: High-Rate DDoS — ICMP Fragmentation (99.5%)
+13:58:36,192.168.1.114,BLOCK,High-Rate Flood,Model: High-Rate DDoS — High-Rate Flood (99.0%)
+13:58:28,192.168.1.113,BLOCK,High-Rate Flood,Model: High-Rate DDoS — High-Rate Flood (99.4%)
+13:58:21,192.168.1.112,BLOCK,UDP Flood,Model: High-Rate DDoS — UDP Flood (98.0%)
+13:58:13,192.168.1.111,BLOCK,HTTP Flood (Slowloris),Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+13:58:06,192.168.1.110,BLOCK,DoS TCP Flood,Model: Low-Rate DDoS — DoS TCP Flood (98.5%)
+13:57:56,192.168.1.109,BLOCK,Rule Violation,Rule: Adaptive: High rate=645278 > 10000
+13:57:54,192.168.1.108,BLOCK,UDP Flood,Model: High-Rate DDoS — UDP Flood (73.4%)
+13:57:46,192.168.1.107,BLOCK,High-Rate Flood,Model: High-Rate DDoS — High-Rate Flood (97.7%)
+13:57:37,192.168.1.106,BLOCK,High-Rate Flood,Model: High-Rate DDoS — High-Rate Flood (99.2%)
+13:57:28,192.168.1.105,BLOCK,HTTP Flood (Slowloris),Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+13:57:18,192.168.1.104,BLOCK,Rule Violation,Rule: Adaptive: Tiny packet=7 < 20

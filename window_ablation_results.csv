@@ -1,0 +1,5 @@
+Window Size (W),Pre-filter Precision (%),False Positive Rate (%),Classifier Load Reduction (%),Attack Recall (%)
+25,100.0,0.0,2.33,2.62
+50,100.0,0.0,2.19,2.46
+100,100.0,0.0,4.06,4.55
+200,100.0,0.0,2.2,2.47

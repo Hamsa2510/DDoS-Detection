@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>IIoT DDoS Monitor</title>
+  <link rel="manifest" href="/manifest.json">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background: #1e293b;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 0.5px solid #334155;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-left { display:flex; align-items:center; gap:8px; }
+    .header h1   { font-size:16px; font-weight:500; color:#f1f5f9; }
+
+    .live-dot {
+      width:8px; height:8px;
+      background:#22c55e;
+      border-radius:50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    .header-actions { display:flex; gap:8px; align-items:center; }
+
+    .icon-btn {
+      background:none; border:none;
+      color:#64748b; font-size:20px;
+      cursor:pointer; padding:4px;
+      border-radius:6px;
+    }
+
+    .icon-btn:active { background:#334155; }
+
+    .paused-banner {
+      background:#451a03;
+      border-bottom:0.5px solid #92400e;
+      padding:8px 16px;
+      font-size:12px;
+      color:#fbbf24;
+      text-align:center;
+      display:none;
+    }
+
+    .notif-banner {
+      margin: 12px 16px 0;
+      background: #450a0a;
+      border: 0.5px solid #7f1d1d;
+      border-left: 3px solid #ef4444;
+      border-radius: 10px;
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: slideIn 0.3s ease;
+    }
+
+    .notif-banner.hidden { display:none; }
+
+    @keyframes slideIn {
+      from { opacity:0; transform:translateY(-8px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+
+    .notif-icon {
+      width:32px; height:32px;
+      background:#7f1d1d;
+      border-radius:8px;
+      display:flex; align-items:center; justify-content:center;
+      font-size:16px; flex-shrink:0;
+    }
+
+    .notif-title { font-size:12px; font-weight:500; color:#fca5a5; }
+    .notif-body  { font-size:11px; color:#94a3b8; margin-top:2px; }
+
+    .body { padding:12px 16px 80px; }
+
+    .section-label {
+      font-size:10px; color:#475569;
+      text-transform:uppercase; letter-spacing:0.08em;
+      margin:16px 0 8px;
+    }
+
+    .threat-card {
+      background:#1e293b;
+      border:0.5px solid #334155;
+      border-radius:12px;
+      padding:14px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .threat-label { font-size:12px; color:#94a3b8; margin-bottom:4px; }
+    .threat-value { font-size:24px; font-weight:500; }
+    .threat-value.green  { color:#34d399; }
+    .threat-value.amber  { color:#fbbf24; }
+    .threat-value.orange { color:#fb923c; }
+    .threat-value.red    { color:#f87171; }
+
+    .threat-gauge {
+      width:64px; height:64px;
+      border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-size:11px; font-weight:500;
+    }
+
+    .threat-gauge.green  { background:#052e16; color:#34d399; border:2px solid #34d399; }
+    .threat-gauge.amber  { background:#451a03; color:#fbbf24; border:2px solid #fbbf24; }
+    .threat-gauge.orange { background:#431407; color:#fb923c; border:2px solid #fb923c; }
+    .threat-gauge.red    { background:#450a0a; color:#f87171; border:2px solid #f87171; }
+
+    .stats-grid {
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:8px;
+    }
+
+    .stat-card {
+      background:#1e293b;
+      border:0.5px solid #334155;
+      border-radius:10px;
+      padding:12px;
+      text-align:center;
+    }
+
+    .stat-number { font-size:26px; font-weight:500; margin-bottom:3px; }
+    .stat-label  { font-size:10px; color:#64748b; text-transform:uppercase; letter-spacing:0.05em; }
+    .stat-card.total   .stat-number { color:#60a5fa; }
+    .stat-card.blocked .stat-number { color:#f87171; }
+    .stat-card.susp    .stat-number { color:#fbbf24; }
+    .stat-card.allowed .stat-number { color:#34d399; }
+
+    .rates-card {
+      background:#1e293b;
+      border:0.5px solid #334155;
+      border-radius:10px;
+      padding:12px 14px;
+    }
+
+    .rate-row {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:6px 0; border-bottom:0.5px solid #334155; font-size:13px;
+    }
+
+    .rate-row:last-child { border-bottom:none; }
+    .rate-label { color:#94a3b8; }
+    .rate-value { font-weight:500; }
+    .rate-value.good { color:#34d399; }
+    .rate-value.warn { color:#fbbf24; }
+    .rate-value.bad  { color:#f87171; }
+
+    .alert-card {
+      border-radius:10px; padding:11px 13px;
+      margin-bottom:8px; border-left:3px solid;
+    }
+
+    .alert-card.block { background:#1c0a0a; border-color:#ef4444; }
+    .alert-card.susp  { background:#1c1207; border-color:#f59e0b; }
+    .alert-card.allow { background:#052e16; border-color:#22c55e; }
+
+    .alert-top {
+      display:flex; justify-content:space-between;
+      align-items:center; margin-bottom:4px;
+    }
+
+    .alert-ip      { font-size:13px; font-weight:500; color:#f1f5f9; font-family:monospace; }
+    .alert-time    { font-size:10px; color:#64748b; }
+    .badge         { padding:2px 8px; border-radius:99px; font-size:10px; font-weight:500; }
+    .badge.block   { background:#450a0a; color:#fca5a5; }
+    .badge.allow   { background:#052e16; color:#86efac; }
+    .badge.susp    { background:#451a03; color:#fcd34d; }
+    .alert-reason  { font-size:11px; color:#94a3b8; margin-bottom:3px; }
+    .alert-subtype { font-size:11px; color:#60a5fa; margin-bottom:4px; }
+    .alert-layer   {
+      display:inline-block; font-size:10px;
+      padding:1px 6px; border-radius:4px;
+      background:#1e3a5f; color:#60a5fa; margin-right:4px;
+    }
+
+    .shap-mini { margin-top:6px; }
+    .shap-row-mini { display:flex; align-items:center; gap:6px; margin-bottom:4px; }
+    .shap-lbl  { width:100px; font-size:10px; color:#64748b; font-family:monospace; text-align:right; flex-shrink:0; }
+    .shap-bg   { flex:1; background:#0f172a; border-radius:3px; height:10px; overflow:hidden; }
+    .shap-bar  { height:100%; background:#3b82f6; border-radius:3px; transition:width 0.5s; }
+
+    .threshold-card {
+      background:#1e293b;
+      border:0.5px solid #334155;
+      border-radius:10px; overflow:hidden;
+    }
+
+    .threshold-row {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:9px 14px; border-bottom:0.5px solid #334155; font-size:12px;
+    }
+
+    .threshold-row:last-child { border-bottom:none; }
+    .threshold-label { color:#94a3b8; }
+    .threshold-val   { color:#60a5fa; font-family:monospace; font-size:11px; }
+    .threshold-val.good { color:#34d399; }
+
+    .subtype-row   { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+    .subtype-name  { width:130px; font-size:11px; color:#94a3b8; font-family:monospace; flex-shrink:0; }
+    .subtype-bg    { flex:1; background:#1e293b; border-radius:3px; height:14px; overflow:hidden; }
+    .subtype-bar   { height:100%; background:#ef4444; border-radius:3px; transition:width 0.5s; }
+    .subtype-count { width:28px; font-size:11px; color:#64748b; text-align:right; flex-shrink:0; }
+
+    .ip-row {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:8px 14px; background:#1e293b;
+      border:0.5px solid #334155; border-radius:8px;
+      margin-bottom:6px; font-size:12px;
+    }
+
+    .ip-addr  { font-family:monospace; color:#f1f5f9; }
+    .ip-count { color:#f87171; font-weight:500; }
+
+    .status-card { background:#1e293b; border:0.5px solid #334155; border-radius:10px; overflow:hidden; }
+
+    .status-row {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:9px 14px; border-bottom:0.5px solid #334155; font-size:12px;
+    }
+
+    .status-row:last-child { border-bottom:none; }
+    .status-name   { color:#94a3b8; }
+    .status-active { color:#34d399; font-size:11px; }
+    .status-dot    { width:7px; height:7px; border-radius:50%; background:#34d399; display:inline-block; margin-right:5px; }
+
+    .ip-tags { display:flex; flex-wrap:wrap; gap:6px; }
+    .ip-tag  { background:#450a0a; color:#fca5a5; padding:3px 10px; border-radius:99px; font-size:11px; font-family:monospace; }
+
+    .action-row {
+      display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap;
+    }
+
+    .action-btn {
+      flex:1; min-width:80px;
+      padding:9px 12px; border-radius:8px;
+      font-size:12px; cursor:pointer;
+      border:0.5px solid #334155;
+      background:#1e293b; text-align:center;
+    }
+
+    .action-btn.blue   { color:#60a5fa; }
+    .action-btn.yellow { color:#fbbf24; }
+    .action-btn.green  { color:#34d399; }
+
+    .block-input-row {
+      display:flex; gap:8px; margin-bottom:12px;
+    }
+
+    .block-input-row input {
+      flex:1; background:#1e293b;
+      border:0.5px solid #334155;
+      color:#e2e8f0; padding:8px 12px;
+      border-radius:8px; font-size:12px;
+      font-family:monospace;
+    }
+
+    .block-input-row button {
+      background:#450a0a; border:0.5px solid #7f1d1d;
+      color:#fca5a5; padding:8px 14px;
+      border-radius:8px; font-size:12px; cursor:pointer;
+    }
+
+    .nav-bar {
+      position:fixed; bottom:0; left:50%; transform:translateX(-50%);
+      width:100%; max-width:480px;
+      background:#1e293b; border-top:0.5px solid #334155;
+      display:flex; justify-content:space-around;
+      padding:8px 0 16px; z-index:100;
+    }
+
+    .nav-item {
+      display:flex; flex-direction:column; align-items:center;
+      gap:3px; font-size:10px; color:#64748b;
+      cursor:pointer; padding:4px 16px; border-radius:8px;
+      background:none; border:none;
+    }
+
+    .nav-item.active { color:#60a5fa; }
+    .nav-icon { font-size:20px; }
+
+    .screen { display:none; }
+    .screen.active { display:block; }
+    .empty { color:#475569; font-size:13px; text-align:center; padding:20px; }
+
+    .uptime-row {
+      display:flex; justify-content:space-between;
+      font-size:11px; color:#64748b; margin-bottom:12px;
+      padding:8px 14px; background:#1e293b;
+      border:0.5px solid #334155; border-radius:8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <div class="live-dot"></div>
+    <h1>IIoT DDoS Monitor</h1>
+  </div>
+  <div class="header-actions">
+    <button class="icon-btn" id="pause-icon-btn"
+      onclick="togglePause()" title="Pause/Resume">⏸</button>
+    <button class="icon-btn" onclick="fetchData()" title="Refresh">↻</button>
+  </div>
+</div>
+
+<div class="paused-banner" id="paused-banner">
+  Pipeline paused — tap to resume
+</div>
+
+<div class="notif-banner hidden" id="notif-banner">
+  <div class="notif-icon">🛡</div>
+  <div>
+    <div class="notif-title" id="notif-title">Attack detected</div>
+    <div class="notif-body"  id="notif-body">Loading...</div>
+  </div>
+</div>
+
+<div class="body">
+
+  <!-- HOME SCREEN -->
+  <div class="screen active" id="screen-home">
+
+    <div class="uptime-row">
+      <span>Session uptime</span>
+      <span id="h-uptime" style="color:#60a5fa;">00:00</span>
+    </div>
+
+    <div class="section-label">Threat level</div>
+    <div class="threat-card">
+      <div>
+        <div class="threat-label">Current network status</div>
+        <div class="threat-value" id="threat-value">--</div>
+        <div style="font-size:11px;color:#64748b;margin-top:4px"
+             id="threat-sub">Waiting for data...
+        </div>
+      </div>
+      <div class="threat-gauge" id="threat-gauge">--</div>
+    </div>
+
+    <div class="section-label">Live stats</div>
+    <div class="stats-grid">
+      <div class="stat-card total">
+        <div class="stat-number" id="h-total">0</div>
+        <div class="stat-label">Total flows</div>
+      </div>
+      <div class="stat-card blocked">
+        <div class="stat-number" id="h-blocked">0</div>
+        <div class="stat-label">Blocked</div>
+      </div>
+      <div class="stat-card susp">
+        <div class="stat-number" id="h-susp">0</div>
+        <div class="stat-label">Suspicious</div>
+      </div>
+      <div class="stat-card allowed">
+        <div class="stat-number" id="h-allowed">0</div>
+        <div class="stat-label">Allowed</div>
+      </div>
+    </div>
+
+    <div class="section-label">Detection performance</div>
+    <div class="rates-card">
+      <div class="rate-row">
+        <span class="rate-label">Detection rate</span>
+        <span class="rate-value good" id="h-detection">--%</span>
+      </div>
+      <div class="rate-row">
+        <span class="rate-label">Blocked by rule filter</span>
+        <span class="rate-value" id="h-rule" style="color:#60a5fa">0</span>
+      </div>
+      <div class="rate-row">
+        <span class="rate-label">Blocked by CNN-TCN</span>
+        <span class="rate-value" id="h-model" style="color:#60a5fa">0</span>
+      </div>
+    </div>
+
+    <div class="section-label">RL agent — adaptive thresholds</div>
+    <div class="threshold-card">
+      <div class="threshold-row">
+        <span class="threshold-label">Rate threshold</span>
+        <span class="threshold-val" id="h-rate">--</span>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">SYN threshold</span>
+        <span class="threshold-val" id="h-syn">--</span>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">Header threshold</span>
+        <span class="threshold-val" id="h-header">--</span>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">Agent epsilon</span>
+        <span class="threshold-val" id="h-epsilon">--</span>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">Cumulative reward</span>
+        <span class="threshold-val good" id="h-reward">--</span>
+      </div>
+    </div>
+
+    <div class="section-label">Recent alerts</div>
+    <div id="h-alerts">
+      <div class="empty">No alerts yet...</div>
+    </div>
+
+  </div>
+
+  <!-- ALERTS SCREEN -->
+  <div class="screen" id="screen-alerts">
+
+    <div class="section-label">Quick actions</div>
+    <div class="action-row">
+      <button class="action-btn blue" id="pause-action-btn"
+        onclick="togglePause()">Pause</button>
+      <button class="action-btn yellow"
+        onclick="clearAlertsMobile()">Clear</button>
+      <button class="action-btn green"
+        onclick="exportAlerts()">Export CSV</button>
+    </div>
+
+    <div class="section-label">Block IP manually</div>
+    <div class="block-input-row">
+      <input type="text" id="block-ip-input" placeholder="192.168.1.x">
+      <button onclick="blockIP()">Block</button>
+    </div>
+
+    <div class="section-label">System status</div>
+    <div class="status-card">
+      <div class="status-row">
+        <span class="status-name">RL Adaptive Filter</span>
+        <span class="status-active"><span class="status-dot"></span>Active</span>
+      </div>
+      <div class="status-row">
+        <span class="status-name">CNN-TCN Model</span>
+        <span class="status-active"><span class="status-dot"></span>Loaded</span>
+      </div>
+      <div class="status-row">
+        <span class="status-name">CUSUM Monitor</span>
+        <span class="status-active"><span class="status-dot"></span>Tracking</span>
+      </div>
+      <div class="status-row">
+        <span class="status-name">Sub-type Classifier</span>
+        <span class="status-active"><span class="status-dot"></span>Active</span>
+      </div>
+      <div class="status-row">
+        <span class="status-name">SHAP Explainability</span>
+        <span class="status-active"><span class="status-dot"></span>Active</span>
+      </div>
+    </div>
+
+    <div class="section-label">Blocked IPs</div>
+    <div class="ip-tags" id="a-blocked-ips">
+      <div class="empty">No blocked IPs yet...</div>
+    </div>
+
+    <div class="section-label">Attack sub-type breakdown</div>
+    <div id="a-subtypes">
+      <div class="empty">No attacks yet...</div>
+    </div>
+
+    <div class="section-label">Top attacking IPs</div>
+    <div id="a-top-ips">
+      <div class="empty">No data yet...</div>
+    </div>
+
+    <div class="section-label">Alert history</div>
+    <div id="a-alerts">
+      <div class="empty">No alerts yet...</div>
+    </div>
+
+  </div>
+
+  <!-- STATS SCREEN -->
+  <div class="screen" id="screen-stats">
+
+    <div class="section-label">Feature importance — latest prediction</div>
+    <div id="s-shap">
+      <div class="empty">Waiting for prediction...</div>
+    </div>
+
+    <div class="section-label">Attack sub-type counts</div>
+    <div id="s-subtypes">
+      <div class="empty">No attacks detected yet...</div>
+    </div>
+
+    <div class="section-label">Pipeline performance</div>
+    <div class="rates-card">
+      <div class="rate-row">
+        <span class="rate-label">Total flows processed</span>
+        <span class="rate-value" style="color:#60a5fa" id="s-total">0</span>
+      </div>
+      <div class="rate-row">
+        <span class="rate-label">Blocked by rule filter</span>
+        <span class="rate-value bad" id="s-rule">0</span>
+      </div>
+      <div class="rate-row">
+        <span class="rate-label">Blocked by CNN-TCN</span>
+        <span class="rate-value bad" id="s-model">0</span>
+      </div>
+      <div class="rate-row">
+        <span class="rate-label">Flagged by CUSUM</span>
+        <span class="rate-value warn" id="s-cusum">0</span>
+      </div>
+      <div class="rate-row">
+        <span class="rate-label">Allowed through</span>
+        <span class="rate-value good" id="s-allowed">0</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SETTINGS SCREEN -->
+  <div class="screen" id="screen-settings">
+
+    <div class="section-label">Controls</div>
+    <div class="threshold-card">
+      <div class="threshold-row">
+        <span class="threshold-label">Auto-refresh</span>
+        <label style="display:flex;align-items:center;gap:6px;cursor:pointer;">
+          <input type="checkbox" id="auto-refresh" checked
+            onchange="toggleRefresh(this.checked)">
+          <span style="font-size:12px;color:#60a5fa">Every 3s</span>
+        </label>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">Sound alerts</span>
+        <label style="display:flex;align-items:center;gap:6px;cursor:pointer;">
+          <input type="checkbox" id="sound-toggle">
+          <span style="font-size:12px;color:#60a5fa" id="sound-label">Off</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="section-label">About</div>
+    <div class="threshold-card">
+      <div class="threshold-row">
+        <span class="threshold-label">Model</span>
+        <span class="threshold-val">CNN-TCN Hybrid</span>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">Classes</span>
+        <span class="threshold-val">4 (B/HR/LR/FC)</span>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">Parameters</span>
+        <span class="threshold-val">80,964</span>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">FPGA board</span>
+        <span class="threshold-val">Pynq-Z2</span>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">Inference latency</span>
+        <span class="threshold-val">~1 µs</span>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">Dataset</span>
+        <span class="threshold-val">CICIoT2023</span>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">Rule filter</span>
+        <span class="threshold-val">RL Adaptive</span>
+      </div>
+      <div class="threshold-row">
+        <span class="threshold-label">Explainability</span>
+        <span class="threshold-val">Permutation SHAP</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<nav class="nav-bar">
+  <button class="nav-item active" id="nav-home"
+    onclick="switchTab('home')" aria-label="Home">
+    <span class="nav-icon">⌂</span>
+    <span>Home</span>
+  </button>
+  <button class="nav-item" id="nav-alerts"
+    onclick="switchTab('alerts')" aria-label="Alerts">
+    <span class="nav-icon">🔔</span>
+    <span>Alerts</span>
+  </button>
+  <button class="nav-item" id="nav-stats"
+    onclick="switchTab('stats')" aria-label="Stats">
+    <span class="nav-icon">📊</span>
+    <span>Stats</span>
+  </button>
+  <button class="nav-item" id="nav-settings"
+    onclick="switchTab('settings')" aria-label="Settings">
+    <span class="nav-icon">⚙</span>
+    <span>Settings</span>
+  </button>
+</nav>
+
+<script>
+  let refreshInterval = null;
+  let lastAlertTime   = null;
+  let soundEnabled    = false;
+  let isPaused        = false;
+
+  function switchTab(tab) {
+    document.querySelectorAll('.screen').forEach(s =>
+      s.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(n =>
+      n.classList.remove('active'));
+    document.getElementById('screen-' + tab).classList.add('active');
+    document.getElementById('nav-' + tab).classList.add('active');
+  }
+
+  function toggleRefresh(enabled) {
+    clearInterval(refreshInterval);
+    if (enabled) refreshInterval = setInterval(fetchData, 3000);
+  }
+
+  document.getElementById('sound-toggle').addEventListener('change',
+    function() {
+      soundEnabled = this.checked;
+      document.getElementById('sound-label').textContent =
+        this.checked ? 'On' : 'Off';
+    }
+  );
+
+  function playAlert() {
+    if (!soundEnabled) return;
+    try {
+      const ctx  = new (window.AudioContext || window.webkitAudioContext)();
+      const osc  = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.frequency.value = 880;
+      gain.gain.setValueAtTime(0.3, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.3);
+    } catch(e) {}
+  }
+
+  function togglePause() {
+    fetch('/api/pause', { method: 'POST' })
+      .then(res => res.json())
+      .then(data => {
+        isPaused = data.status === 'paused';
+        const banner    = document.getElementById('paused-banner');
+        const iconBtn   = document.getElementById('pause-icon-btn');
+        const actionBtn = document.getElementById('pause-action-btn');
+        if (isPaused) {
+          banner.style.display = 'block';
+          iconBtn.textContent  = '▶';
+          if (actionBtn) actionBtn.textContent = 'Resume';
+        } else {
+          banner.style.display = 'none';
+          iconBtn.textContent  = '⏸';
+          if (actionBtn) actionBtn.textContent = 'Pause';
+        }
+      });
+  }
+
+  function clearAlertsMobile() {
+    if (confirm('Clear all alerts and blocked IPs?')) {
+      fetch('/api/clear_alerts', { method: 'POST' })
+        .then(() => fetchData());
+    }
+  }
+
+  function exportAlerts() {
+    window.location.href = '/api/export_alerts';
+  }
+
+  function blockIP() {
+    const ip = document.getElementById('block-ip-input').value.trim();
+    if (!ip) return;
+    fetch('/api/block_ip', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ip: ip })
+    })
+    .then(res => res.json())
+    .then(data => {
+      alert(`IP ${data.ip} ${data.status}`);
+      document.getElementById('block-ip-input').value = '';
+      fetchData();
+    });
+  }
+
+  function updateUptime(seconds) {
+    const m  = Math.floor(seconds / 60).toString().padStart(2, '0');
+    const s  = (seconds % 60).toString().padStart(2, '0');
+    const el = document.getElementById('h-uptime');
+    if (el) el.textContent = `${m}:${s}`;
+  }
+
+  function getThreatClass(color) {
+    return color === 'green'  ? 'green'
+         : color === 'amber'  ? 'amber'
+         : color === 'orange' ? 'orange'
+         : 'red';
+  }
+
+  function getAlertClass(type) {
+    return type === 'BLOCK'      ? 'block'
+         : type === 'SUSPICIOUS' ? 'susp'
+         : 'allow';
+  }
+
+  function getDetectionLayer(stages) {
+    if (!stages) return '';
+    for (const s of stages) {
+      if (s.decision === 'BLOCK') return s.stage;
+    }
+    return '';
+  }
+
+  function renderAlertCard(a) {
+    const cls      = getAlertClass(a.type);
+    const layer    = getDetectionLayer(a.stages || []);
+    const shapHtml = a.shap && a.shap.length > 0
+      ? `<div class="shap-mini">
+          ${a.shap.slice(0,3).map(item => {
+            const maxVal = a.shap[0].importance;
+            const pct    = maxVal > 0
+              ? (item.importance / maxVal * 100).toFixed(0) : 0;
+            return `<div class="shap-row-mini">
+              <div class="shap-lbl">${item.feature}</div>
+              <div class="shap-bg">
+                <div class="shap-bar" style="width:${pct}%"></div>
+              </div>
+            </div>`;
+          }).join('')}
+        </div>`
+      : '';
+
+    return `
+      <div class="alert-card ${cls}">
+        <div class="alert-top">
+          <span class="alert-ip">${a.ip}</span>
+          <div style="display:flex;align-items:center;gap:6px;">
+            <span class="badge ${cls}">${a.type}</span>
+            <span class="alert-time">${a.time}</span>
+          </div>
+        </div>
+        <div class="alert-reason">${a.reason}</div>
+        ${a.subtype
+          ? `<div class="alert-subtype">Sub-type: ${a.subtype}</div>`
+          : ''}
+        ${layer
+          ? `<span class="alert-layer">${layer}</span>`
+          : ''}
+        ${shapHtml}
+      </div>`;
+  }
+
+  function fetchData() {
+    fetch('/api/mobile')
+      .then(res => res.json())
+      .then(data => {
+
+        const s = data.stats;
+
+        if (data.uptime) updateUptime(data.uptime);
+
+        // Threat level
+        const tc = getThreatClass(data.threat_color);
+        document.getElementById('threat-value').className =
+          `threat-value ${tc}`;
+        document.getElementById('threat-value').textContent =
+          data.threat_level;
+        document.getElementById('threat-gauge').className =
+          `threat-gauge ${tc}`;
+        document.getElementById('threat-gauge').textContent =
+          data.detection_rate + '%';
+        document.getElementById('threat-sub').textContent =
+          `Detection rate: ${data.detection_rate}%`;
+
+        // Home stats
+        document.getElementById('h-total').textContent   = s.total;
+        document.getElementById('h-blocked').textContent =
+          s.blocked_rule + s.blocked_model;
+        document.getElementById('h-susp').textContent    = s.suspicious;
+        document.getElementById('h-allowed').textContent = s.allowed;
+
+        // Detection performance
+        document.getElementById('h-detection').textContent =
+          data.detection_rate + '%';
+        document.getElementById('h-rule').textContent  = s.blocked_rule;
+        document.getElementById('h-model').textContent = s.blocked_model;
+
+        // Thresholds
+        const t = data.thresholds;
+        if (t) {
+          document.getElementById('h-rate').textContent =
+            t.rate ? t.rate.toLocaleString() : '--';
+          document.getElementById('h-syn').textContent    = t.syn     || '--';
+          document.getElementById('h-header').textContent =
+            t.header ? t.header + ' bytes' : '--';
+          document.getElementById('h-epsilon').textContent = t.epsilon || '--';
+          document.getElementById('h-reward').textContent  = t.reward  || '--';
+        }
+
+        // Home alerts
+        document.getElementById('h-alerts').innerHTML =
+          data.alerts.length > 0
+            ? data.alerts.slice(0,3).map(renderAlertCard).join('')
+            : '<div class="empty">No alerts yet...</div>';
+
+        // Notification banner
+        if (data.alerts.length > 0) {
+          const latest = data.alerts[0];
+          if (latest.time !== lastAlertTime &&
+              latest.type === 'BLOCK') {
+            lastAlertTime = latest.time;
+            document.getElementById('notif-title').textContent =
+              'Attack detected — ' + latest.type;
+            document.getElementById('notif-body').textContent =
+              latest.ip + ' — ' + (latest.subtype || latest.reason);
+            document.getElementById('notif-banner')
+              .classList.remove('hidden');
+            playAlert();
+            setTimeout(() => {
+              document.getElementById('notif-banner')
+                .classList.add('hidden');
+            }, 5000);
+          }
+        }
+
+        // Alerts screen
+        document.getElementById('a-alerts').innerHTML =
+          data.alerts.length > 0
+            ? data.alerts.map(renderAlertCard).join('')
+            : '<div class="empty">No alerts yet...</div>';
+
+        // Blocked IPs
+        const ipTags = document.getElementById('a-blocked-ips');
+        ipTags.innerHTML = data.blocked_ips.length > 0
+          ? data.blocked_ips.map(ip =>
+              `<span class="ip-tag">${ip}</span>`).join('')
+          : '<div class="empty">No blocked IPs yet...</div>';
+
+        // Top IPs
+        const topIps = document.getElementById('a-top-ips');
+        topIps.innerHTML = data.top_ips && data.top_ips.length > 0
+          ? data.top_ips.map(([ip, count]) =>
+              `<div class="ip-row">
+                <span class="ip-addr">${ip}</span>
+                <span class="ip-count">${count} blocks</span>
+              </div>`).join('')
+          : '<div class="empty">No data yet...</div>';
+
+        // Sub-types
+        const aSubtypes = document.getElementById('a-subtypes');
+        const sSubtypes = document.getElementById('s-subtypes');
+        if (data.subtype_counts &&
+            Object.keys(data.subtype_counts).length > 0) {
+          const sorted   = Object.entries(data.subtype_counts)
+                             .sort((a,b) => b[1]-a[1]).slice(0,6);
+          const maxCount = sorted[0][1];
+          const html     = sorted.map(([name, count]) => {
+            const pct = (count / maxCount * 100).toFixed(0);
+            return `<div class="subtype-row">
+              <div class="subtype-name">${name}</div>
+              <div class="subtype-bg">
+                <div class="subtype-bar" style="width:${pct}%"></div>
+              </div>
+              <div class="subtype-count">${count}</div>
+            </div>`;
+          }).join('');
+          aSubtypes.innerHTML = html;
+          sSubtypes.innerHTML = html;
+        }
+
+        // Stats screen
+        document.getElementById('s-total').textContent   = s.total;
+        document.getElementById('s-rule').textContent    = s.blocked_rule;
+        document.getElementById('s-model').textContent   = s.blocked_model;
+        document.getElementById('s-cusum').textContent   = s.suspicious;
+        document.getElementById('s-allowed').textContent = s.allowed;
+
+        // SHAP
+        const sShap = document.getElementById('s-shap');
+        if (data.shap_latest && data.shap_latest.length > 0) {
+          const maxVal = data.shap_latest[0].importance;
+          sShap.innerHTML = data.shap_latest.map(item => {
+            const pct = maxVal > 0
+              ? (item.importance / maxVal * 100).toFixed(0) : 0;
+            return `<div class="shap-row-mini" style="margin-bottom:10px;">
+              <div class="shap-lbl"
+                style="width:130px;">${item.feature}</div>
+              <div class="shap-bg">
+                <div class="shap-bar" style="width:${pct}%"></div>
+              </div>
+              <span style="font-size:10px;color:#64748b;
+                margin-left:6px;width:50px;">
+                ${item.importance.toFixed(4)}
+              </span>
+            </div>`;
+          }).join('');
+        }
+
+      })
+      .catch(err => console.error('Fetch error:', err));
+  }
+
+  fetchData();
+  refreshInterval = setInterval(fetchData, 3000);
+</script>
+
+</body>
+</html>

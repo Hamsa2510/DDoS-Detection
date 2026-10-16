@@ -1,0 +1,921 @@
+[13:57:02] 192.168.1.100      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+[13:57:12] 192.168.1.101      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.9%)
+[13:57:14] 192.168.1.102      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=6152
+[13:57:16] 192.168.1.103      BLOCK        Rule Violation            Rule: Adaptive: High rate=23677 > 10000
+[13:57:18] 192.168.1.104      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=7 < 20
+[13:57:28] 192.168.1.105      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[13:57:37] 192.168.1.106      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.2%)
+[13:57:46] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.7%)
+[13:57:54] 192.168.1.108      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (73.4%)
+[13:57:56] 192.168.1.109      BLOCK        Rule Violation            Rule: Adaptive: High rate=645278 > 10000
+[13:58:06] 192.168.1.110      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (98.5%)
+[13:58:13] 192.168.1.111      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[13:58:21] 192.168.1.112      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (98.0%)
+[13:58:28] 192.168.1.113      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.4%)
+[13:58:36] 192.168.1.114      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[13:58:44] 192.168.1.115      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.5%)
+[13:58:54] 192.168.1.116      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.0%)
+[13:59:02] 192.168.1.117      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.6%)
+[13:59:04] 192.168.1.118      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 20
+[13:59:13] 192.168.1.119      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.6%)
+[13:59:15] 192.168.1.120      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=7027
+[13:59:24] 192.168.1.121      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (88.4%)
+[13:59:33] 192.168.1.122      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.2%)
+[14:01:05] 192.168.1.100      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+[14:01:15] 192.168.1.101      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.9%)
+[14:01:17] 192.168.1.102      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=6152
+[14:01:19] 192.168.1.103      BLOCK        Rule Violation            Rule: Adaptive: High rate=23677 > 10000
+[14:01:21] 192.168.1.104      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=7 < 20
+[14:01:30] 192.168.1.105      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[14:01:39] 192.168.1.106      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.2%)
+[14:01:48] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.7%)
+[14:01:57] 192.168.1.108      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (73.4%)
+[14:01:59] 192.168.1.109      BLOCK        Rule Violation            Rule: Adaptive: High rate=645278 > 10000
+[14:02:08] 192.168.1.110      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (98.5%)
+[14:02:17] 192.168.1.111      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[14:02:27] 192.168.1.112      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (98.0%)
+[14:02:37] 192.168.1.113      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.4%)
+[14:02:46] 192.168.1.114      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[14:02:56] 192.168.1.115      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.5%)
+[14:03:06] 192.168.1.116      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.0%)
+[14:03:17] 192.168.1.117      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.6%)
+[14:03:19] 192.168.1.118      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 20
+[14:03:28] 192.168.1.119      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.6%)
+[14:03:30] 192.168.1.120      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=7027
+[14:03:40] 192.168.1.121      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (88.4%)
+[14:03:50] 192.168.1.122      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.2%)
+[14:04:01] 192.168.1.123      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (97.2%)
+[14:04:11] 192.168.1.124      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (86.8%)
+[14:04:21] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (90.6%)
+[14:04:30] 192.168.1.126      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.1%)
+[14:04:39] 192.168.1.127      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (88.3%)
+[14:04:49] 192.168.1.128      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.9%)
+[14:04:58] 192.168.1.129      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (69.3%)
+[14:05:00] 192.168.1.130      BLOCK        Rule Violation            Rule: Adaptive: High rate=10829 > 10000
+[14:05:10] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[14:05:19] 192.168.1.132      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.9%)
+[14:05:28] 192.168.1.133      ALLOW        Normal Traffic            Passed all checks
+[14:05:39] 192.168.1.134      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.8%)
+[14:30:51] 192.168.1.100      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=8336
+[14:31:00] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[14:31:09] 192.168.1.102      ALLOW        Normal Traffic            Passed all checks
+[14:31:18] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[14:31:25] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[14:31:33] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[14:31:41] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[14:31:49] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:31:51] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 20
+[14:31:58] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[14:32:06] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[14:32:14] 192.168.1.111      BLOCK        Manual Block              Manually blocked by admin
+[14:32:21] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[14:32:23] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 20
+[14:32:25] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: High rate=615485 > 10000
+[14:32:33] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:32:42] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[14:32:50] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[14:32:58] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[14:33:06] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[14:33:13] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[14:33:15] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 20
+[14:33:23] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[14:33:32] 192.168.1.123      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (81.9%)
+[14:33:34] 192.168.1.124      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 20
+[14:33:43] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.4%)
+[14:33:45] 192.168.1.126      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 20
+[14:33:54] 192.168.1.127      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.2%)
+[14:34:04] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (84.1%)
+[14:34:12] 192.168.1.129      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.2%)
+[14:34:19] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (68.3%)
+[14:34:27] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.1%)
+[14:38:12] 192.168.1.100      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=8336
+[14:38:21] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[14:38:30] 192.168.1.102      ALLOW        Normal Traffic            Passed all checks
+[14:38:40] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[14:38:49] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[14:38:56] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[14:39:04] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[14:39:11] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:39:13] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 20
+[14:39:21] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[14:39:29] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[14:39:37] 192.168.1.111      BLOCK        Manual Block              Manually blocked by admin
+[14:39:45] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[14:39:47] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 20
+[14:39:49] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: High rate=615485 > 10000
+[14:39:57] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:40:04] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[14:47:45] 192.168.1.100      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=8336
+[14:47:54] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[14:48:03] 192.168.1.102      ALLOW        Normal Traffic            Passed all checks
+[14:48:12] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[14:48:22] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[14:48:30] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[14:48:39] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[14:48:48] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:48:50] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 20
+[14:48:59] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[14:49:08] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[14:49:17] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[14:49:27] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[14:49:29] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 20
+[14:49:31] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: High rate=615485 > 10000
+[14:49:40] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:49:49] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[14:49:58] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[14:50:08] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[14:50:17] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[14:50:26] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[14:50:28] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 20
+[14:50:38] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[14:51:13] 192.168.1.100      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=8336
+[14:51:22] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[14:51:30] 192.168.1.102      ALLOW        Normal Traffic            Passed all checks
+[14:51:39] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[14:51:47] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[14:51:56] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[14:52:05] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[14:52:14] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:52:16] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 20
+[14:52:23] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[14:52:31] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[14:52:39] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[14:52:47] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[14:52:49] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 20
+[14:52:51] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: High rate=615485 > 10000
+[14:52:58] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:53:07] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[14:53:15] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[14:56:31] 192.168.1.100      BLOCK        Rule Violation            Rule: Adaptive: High rate=8336 > 3000
+[14:56:41] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[14:56:49] 192.168.1.102      ALLOW        Normal Traffic            Passed all checks
+[14:56:58] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[14:57:07] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[14:57:15] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[14:57:24] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[14:57:32] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:57:34] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[14:57:43] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[14:57:53] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[14:58:01] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[14:58:03] 192.168.1.112      BLOCK        Rule Violation            Rule: Adaptive: High rate=3834 > 3000
+[14:58:05] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 15
+[14:58:07] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: High rate=615485 > 3000
+[14:58:16] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:58:25] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[14:58:34] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[14:58:42] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[14:58:51] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[14:58:59] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[14:59:01] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 15
+[14:59:10] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[14:59:18] 192.168.1.123      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (81.9%)
+[14:59:20] 192.168.1.124      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[14:59:28] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.4%)
+[14:59:30] 192.168.1.126      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[14:59:39] 192.168.1.127      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.2%)
+[14:59:48] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (84.1%)
+[14:59:57] 192.168.1.129      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.2%)
+[15:00:05] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (68.3%)
+[15:00:14] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.1%)
+[15:00:22] 192.168.1.132      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.1%)
+[15:00:30] 192.168.1.133      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+[15:00:39] 192.168.1.134      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (94.6%)
+[15:00:47] 192.168.1.135      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (60.1%)
+[15:00:55] 192.168.1.136      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[15:00:57] 192.168.1.137      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=2691
+[15:01:07] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.1%)
+[15:01:09] 192.168.1.139      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[15:01:18] 192.168.1.140      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[15:01:20] 192.168.1.141      BLOCK        Rule Violation            Rule: Adaptive: High rate=4249 > 3000
+[15:01:29] 192.168.1.142      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.3%)
+[15:10:30] 192.168.1.100      BLOCK        Rule Violation            Rule: Adaptive: High rate=8336 > 3000
+[15:10:40] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[15:10:49] 192.168.1.102      ALLOW        Normal Traffic            Passed all checks
+[15:10:57] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[15:11:05] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[15:11:13] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[15:11:21] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[15:11:29] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[15:11:31] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[15:11:39] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[15:11:47] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[15:11:55] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[15:11:57] 192.168.1.112      BLOCK        Rule Violation            Rule: Adaptive: High rate=3834 > 3000
+[15:11:59] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 15
+[15:12:01] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: High rate=615485 > 3000
+[15:12:09] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[15:12:16] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[15:12:24] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[15:12:32] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[15:12:40] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[15:12:48] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[15:12:50] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 15
+[15:12:59] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[15:13:08] 192.168.1.123      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (81.9%)
+[15:13:10] 192.168.1.124      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[15:13:18] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.4%)
+[15:13:20] 192.168.1.126      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[15:13:29] 192.168.1.127      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.2%)
+[15:13:38] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (84.1%)
+[15:13:47] 192.168.1.129      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.2%)
+[15:13:56] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (68.3%)
+[15:14:04] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.1%)
+[15:14:13] 192.168.1.132      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.1%)
+[15:14:21] 192.168.1.133      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+[15:14:29] 192.168.1.134      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (94.6%)
+[15:14:38] 192.168.1.135      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (60.1%)
+[15:14:46] 192.168.1.136      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[15:14:48] 192.168.1.137      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=2691
+[15:14:56] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.1%)
+[15:14:58] 192.168.1.139      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[15:15:06] 192.168.1.140      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[15:15:08] 192.168.1.141      BLOCK        Rule Violation            Rule: Adaptive: High rate=4249 > 3000
+[15:15:16] 192.168.1.142      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.3%)
+[15:15:23] 192.168.1.143      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[15:15:31] 192.168.1.144      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.4%)
+[15:15:39] 192.168.1.145      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.3%)
+[15:15:41] 192.168.1.146      BLOCK        Rule Violation            Rule: Adaptive: High rate=71772 > 3000
+[15:15:49] 192.168.1.147      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (66.2%)
+[15:15:56] 192.168.1.148      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.3%)
+[15:16:04] 192.168.1.149      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (81.3%)
+[15:16:12] 192.168.1.100      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (54.3%)
+[15:16:19] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (98.1%)
+[15:16:27] 192.168.1.102      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (85.0%)
+[15:16:35] 192.168.1.103      ALLOW        Normal Traffic            Passed all checks
+[15:16:43] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.6%)
+[15:16:45] 192.168.1.105      BLOCK        Rule Violation            Rule: Adaptive: High rate=9883 > 3000
+[15:16:53] 192.168.1.106      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.9%)
+[15:16:55] 192.168.1.107      BLOCK        Rule Violation            Rule: Adaptive: High rate=7284 > 3000
+[15:17:03] 192.168.1.108      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.7%)
+[15:17:11] 192.168.1.109      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.4%)
+[15:17:19] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.0%)
+[15:17:27] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.9%)
+[15:17:35] 192.168.1.112      ALLOW        Normal Traffic            Passed all checks
+[15:17:43] 192.168.1.113      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[15:17:45] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=2 < 15
+[15:17:54] 192.168.1.115      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (95.0%)
+[15:17:56] 192.168.1.116      BLOCK        Rule Violation            Rule: Adaptive: High rate=15093 > 3000
+[13:05:16] 192.168.1.100      BLOCK        Rule Violation            Rule: Adaptive: High rate=8336 > 3000
+[13:05:28] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[13:06:17] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[13:06:28] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[13:06:40] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[13:06:51] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[13:07:02] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[13:07:14] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[13:07:16] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[13:07:28] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[13:07:40] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[13:07:51] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[13:07:53] 192.168.1.112      BLOCK        Rule Violation            Rule: Adaptive: High rate=3834 > 3000
+[13:07:55] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 15
+[13:07:57] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: High rate=615485 > 3000
+[13:08:08] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[13:08:19] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[13:08:30] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[13:08:40] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[13:08:50] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[13:09:00] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[13:09:02] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 15
+[13:09:12] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[13:09:21] 192.168.1.123      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (81.9%)
+[13:09:23] 192.168.1.124      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[13:09:32] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.4%)
+[13:09:34] 192.168.1.126      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[13:09:43] 192.168.1.127      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.2%)
+[13:09:52] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (84.1%)
+[13:10:01] 192.168.1.129      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.2%)
+[13:10:10] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (68.3%)
+[13:10:19] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.1%)
+[13:10:27] 192.168.1.132      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.1%)
+[13:10:37] 192.168.1.133      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+[13:10:45] 192.168.1.134      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (94.6%)
+[13:10:54] 192.168.1.135      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (60.1%)
+[13:40:22] 192.168.1.100      BLOCK        Rule Violation            Rule: Adaptive: High rate=8336 > 3000
+[13:40:33] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[13:40:42] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[14:12:13] 192.168.1.100      BLOCK        Rule Violation            Rule: Adaptive: High rate=8336 > 3000
+[14:12:22] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[14:12:30] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[14:12:38] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[14:12:46] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[14:12:54] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[14:13:01] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[14:13:08] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:13:10] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[14:13:18] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[14:13:25] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[14:13:32] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[14:13:34] 192.168.1.112      BLOCK        Rule Violation            Rule: Adaptive: High rate=3834 > 3000
+[14:13:36] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 15
+[14:13:38] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: High rate=615485 > 3000
+[14:13:46] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:13:53] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[14:14:00] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[14:14:07] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[14:14:15] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[14:14:22] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[14:14:24] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 15
+[14:14:31] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[14:14:39] 192.168.1.123      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (81.9%)
+[14:14:41] 192.168.1.124      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[14:14:48] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.4%)
+[14:14:50] 192.168.1.126      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[14:14:57] 192.168.1.127      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.2%)
+[14:15:05] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (84.1%)
+[14:15:12] 192.168.1.129      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.2%)
+[14:15:20] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (68.3%)
+[14:15:27] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.1%)
+[14:15:34] 192.168.1.132      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.1%)
+[14:15:42] 192.168.1.133      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+[14:15:49] 192.168.1.134      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (94.6%)
+[14:15:56] 192.168.1.135      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (60.1%)
+[14:16:03] 192.168.1.136      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[14:16:05] 192.168.1.137      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=2691
+[14:16:13] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.1%)
+[14:16:15] 192.168.1.139      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[14:16:23] 192.168.1.140      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[17:31:56] 192.168.1.100      BLOCK        Rule Violation            Rule: Adaptive: High rate=8336 > 3000
+[17:32:10] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[17:32:20] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[17:32:31] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[17:32:42] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[17:32:54] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[17:33:05] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[17:33:16] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[17:33:18] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[17:33:29] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[17:33:39] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[17:33:50] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[17:33:52] 192.168.1.112      BLOCK        Rule Violation            Rule: Adaptive: High rate=3834 > 3000
+[17:33:54] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 15
+[17:33:56] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: High rate=615485 > 3000
+[17:34:07] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[17:34:17] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[17:34:26] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[17:34:35] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[17:34:44] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[17:34:53] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[17:34:55] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 15
+[17:35:04] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[17:35:13] 192.168.1.123      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (81.9%)
+[17:35:15] 192.168.1.124      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[17:35:27] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.4%)
+[17:35:29] 192.168.1.126      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[17:35:38] 192.168.1.127      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.2%)
+[17:35:48] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (84.1%)
+[17:35:56] 192.168.1.129      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.2%)
+[17:36:06] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (68.3%)
+[17:36:14] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.1%)
+[17:36:23] 192.168.1.132      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.1%)
+[17:36:32] 192.168.1.133      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+[17:36:45] 192.168.1.134      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (94.6%)
+[17:36:54] 192.168.1.135      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (60.1%)
+[17:37:04] 192.168.1.136      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[17:37:06] 192.168.1.137      BLOCK        Rule Violation            Rule: Adaptive: UDP flood rate=2691
+[17:37:15] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.1%)
+[17:37:17] 192.168.1.139      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[17:37:28] 192.168.1.140      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[17:37:30] 192.168.1.141      BLOCK        Rule Violation            Rule: Adaptive: High rate=4249 > 3000
+[17:37:39] 192.168.1.142      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.3%)
+[17:37:49] 192.168.1.143      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[17:37:58] 192.168.1.144      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.4%)
+[17:38:07] 192.168.1.145      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.3%)
+[17:38:09] 192.168.1.146      BLOCK        Rule Violation            Rule: Adaptive: High rate=71772 > 3000
+[17:38:18] 192.168.1.147      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (66.2%)
+[17:38:28] 192.168.1.148      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.3%)
+[17:38:38] 192.168.1.149      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (81.3%)
+[17:38:48] 192.168.1.100      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (54.3%)
+[17:38:57] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (98.1%)
+[22:06:07] 192.168.1.100      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[22:06:14] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[22:06:22] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[22:06:30] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[22:06:38] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[22:06:46] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[22:06:55] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[22:07:03] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[22:07:05] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 22
+[16:06:49] 192.168.1.100      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[16:06:59] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[16:07:08] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[16:07:18] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[16:07:27] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[16:07:37] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[16:07:46] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[16:07:55] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[16:07:57] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 22
+[16:08:07] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[16:08:16] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[16:08:26] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[16:08:36] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[16:08:38] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 22
+[16:08:47] 192.168.1.114      BLOCK        Low-Rate Flood            Model: Low-Rate DDoS — Low-Rate Flood (98.6%)
+[16:08:56] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[16:09:06] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[16:09:15] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[16:09:25] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[16:09:34] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[16:09:43] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[16:09:45] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 22
+[16:09:55] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[16:10:04] 192.168.1.123      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (81.9%)
+[16:10:06] 192.168.1.124      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 22
+[16:10:16] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.4%)
+[16:10:18] 192.168.1.126      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 22
+[16:10:28] 192.168.1.127      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.2%)
+[16:10:37] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (84.1%)
+[16:10:47] 192.168.1.129      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.2%)
+[16:10:56] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (68.3%)
+[16:11:06] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.1%)
+[16:11:15] 192.168.1.132      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.1%)
+[16:11:25] 192.168.1.133      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+[16:11:34] 192.168.1.134      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (94.6%)
+[16:11:44] 192.168.1.135      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (60.1%)
+[16:11:53] 192.168.1.136      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[16:12:03] 192.168.1.137      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[16:12:13] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.1%)
+[16:12:15] 192.168.1.139      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 22
+[16:12:24] 192.168.1.140      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[16:12:34] 192.168.1.141      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.9%)
+[16:12:44] 192.168.1.142      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.3%)
+[16:12:53] 192.168.1.143      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[16:13:02] 192.168.1.144      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.4%)
+[16:13:12] 192.168.1.145      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.3%)
+[16:13:22] 192.168.1.146      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[16:13:31] 192.168.1.147      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (66.2%)
+[16:13:41] 192.168.1.148      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.3%)
+[16:13:50] 192.168.1.149      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (81.3%)
+[16:14:00] 192.168.1.100      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (54.3%)
+[16:14:10] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (98.1%)
+[16:14:20] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[16:14:30] 192.168.1.103      ALLOW        Normal Traffic            Passed all checks
+[16:14:40] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.6%)
+[16:14:49] 192.168.1.105      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.6%)
+[16:14:59] 192.168.1.106      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.9%)
+[16:15:09] 192.168.1.107      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.7%)
+[16:15:19] 192.168.1.108      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.7%)
+[16:15:29] 192.168.1.109      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.4%)
+[16:15:39] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.0%)
+[16:15:48] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.9%)
+[16:15:58] 192.168.1.112      ALLOW        Normal Traffic            Passed all checks
+[16:16:08] 192.168.1.113      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[16:16:10] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=2 < 22
+[16:16:20] 192.168.1.115      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (95.0%)
+[16:16:29] 192.168.1.116      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.6%)
+[16:16:38] 192.168.1.117      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.5%)
+[16:16:47] 192.168.1.118      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (75.4%)
+[16:16:57] 192.168.1.119      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.3%)
+[16:17:06] 192.168.1.120      ALLOW        Normal Traffic            Passed all checks
+[16:17:15] 192.168.1.121      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.5%)
+[16:17:25] 192.168.1.122      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (83.4%)
+[16:17:34] 192.168.1.123      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (90.6%)
+[16:17:43] 192.168.1.124      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.2%)
+[16:17:52] 192.168.1.125      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.7%)
+[16:18:01] 192.168.1.126      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[16:18:10] 192.168.1.127      ALLOW        Normal Traffic            Passed all checks
+[16:18:20] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (79.0%)
+[16:18:28] 192.168.1.129      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (69.2%)
+[16:18:38] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[16:18:47] 192.168.1.131      ALLOW        Normal Traffic            Passed all checks
+[16:18:56] 192.168.1.132      ALLOW        Normal Traffic            Passed all checks
+[16:19:05] 192.168.1.133      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (95.2%)
+[16:19:14] 192.168.1.134      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.8%)
+[16:19:23] 192.168.1.135      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.9%)
+[16:19:32] 192.168.1.136      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.7%)
+[16:19:41] 192.168.1.137      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.1%)
+[16:19:50] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.4%)
+[16:19:59] 192.168.1.139      ALLOW        Normal Traffic            Passed all checks
+[16:20:08] 192.168.1.140      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.4%)
+[16:20:17] 192.168.1.141      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (93.6%)
+[16:20:27] 192.168.1.142      ALLOW        Normal Traffic            Passed all checks
+[16:20:38] 192.168.1.143      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.5%)
+[16:20:48] 192.168.1.144      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (89.1%)
+[16:20:58] 192.168.1.145      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.1%)
+[16:21:08] 192.168.1.146      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.8%)
+[16:21:17] 192.168.1.147      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (88.4%)
+[16:21:26] 192.168.1.148      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.2%)
+[16:21:35] 192.168.1.149      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (88.9%)
+[16:21:45] 192.168.1.100      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (93.2%)
+[16:21:55] 192.168.1.101      ALLOW        Normal Traffic            Passed all checks
+[16:22:05] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[16:22:15] 192.168.1.103      ALLOW        Normal Traffic            Passed all checks
+[16:22:26] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (90.9%)
+[16:22:35] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.8%)
+[16:22:44] 192.168.1.106      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.6%)
+[16:22:53] 192.168.1.107      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (86.6%)
+[16:23:02] 192.168.1.108      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.2%)
+[16:23:11] 192.168.1.109      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (95.5%)
+[16:23:20] 192.168.1.110      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.9%)
+[16:23:29] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[16:23:38] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.9%)
+[16:23:47] 192.168.1.113      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (60.5%)
+[16:23:56] 192.168.1.114      ALLOW        Normal Traffic            Passed all checks
+[16:24:06] 192.168.1.115      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.3%)
+[16:24:14] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.9%)
+[16:24:23] 192.168.1.117      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.4%)
+[16:24:31] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[16:24:39] 192.168.1.119      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (93.1%)
+[16:24:48] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[16:24:56] 192.168.1.121      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.4%)
+[16:25:04] 192.168.1.122      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (81.6%)
+[16:25:13] 192.168.1.123      ALLOW        Normal Traffic            Passed all checks
+[16:25:21] 192.168.1.124      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.9%)
+[16:25:29] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[16:25:37] 192.168.1.126      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (89.6%)
+[16:25:46] 192.168.1.127      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (98.9%)
+[16:25:48] 192.168.1.128      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=2 < 15
+[16:25:56] 192.168.1.129      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.9%)
+[16:26:04] 192.168.1.130      ALLOW        Normal Traffic            Passed all checks
+[16:26:13] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.1%)
+[16:26:15] 192.168.1.132      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 15
+[16:26:23] 192.168.1.133      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.0%)
+[16:26:31] 192.168.1.134      ALLOW        Normal Traffic            Passed all checks
+[16:26:39] 192.168.1.135      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.3%)
+[16:26:41] 192.168.1.136      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=2 < 15
+[16:26:43] 192.168.1.137      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=10 < 15
+[16:26:52] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.2%)
+[16:26:54] 192.168.1.139      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=1 < 15
+[16:27:02] 192.168.1.140      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.2%)
+[16:27:11] 192.168.1.141      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (83.3%)
+[16:27:19] 192.168.1.142      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.7%)
+[16:27:21] 192.168.1.143      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=1 < 15
+[16:27:29] 192.168.1.144      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.8%)
+[16:27:38] 192.168.1.145      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.1%)
+[16:27:46] 192.168.1.146      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[16:27:54] 192.168.1.147      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.2%)
+[16:28:03] 192.168.1.148      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (79.1%)
+[16:28:11] 192.168.1.149      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.7%)
+[16:28:20] 192.168.1.100      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.9%)
+[16:28:28] 192.168.1.101      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (86.5%)
+[16:28:36] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[16:28:45] 192.168.1.103      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.0%)
+[16:28:53] 192.168.1.104      BLOCK        Low-Rate Flood            Model: Low-Rate DDoS — Low-Rate Flood (98.5%)
+[16:29:01] 192.168.1.105      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.9%)
+[16:29:09] 192.168.1.106      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (88.9%)
+[16:29:17] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.8%)
+[16:29:24] 192.168.1.108      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.6%)
+[16:29:33] 192.168.1.109      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (53.7%)
+[16:29:41] 192.168.1.110      BLOCK        Low-Rate Flood            Model: Low-Rate DDoS — Low-Rate Flood (99.3%)
+[16:29:49] 192.168.1.111      ALLOW        Normal Traffic            Passed all checks
+[16:29:58] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (87.5%)
+[16:30:06] 192.168.1.113      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (77.9%)
+[16:30:08] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[16:30:17] 192.168.1.115      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (83.1%)
+[16:30:25] 192.168.1.116      ALLOW        Normal Traffic            Passed all checks
+[16:30:34] 192.168.1.117      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.2%)
+[16:30:42] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[16:30:50] 192.168.1.119      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (83.1%)
+[16:30:58] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (88.2%)
+[16:31:07] 192.168.1.121      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (81.1%)
+[16:31:15] 192.168.1.122      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.8%)
+[16:31:23] 192.168.1.123      ALLOW        Normal Traffic            Passed all checks
+[16:31:32] 192.168.1.124      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.9%)
+[16:31:40] 192.168.1.125      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (80.6%)
+[16:31:48] 192.168.1.126      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.9%)
+[16:31:56] 192.168.1.127      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (75.5%)
+[16:32:05] 192.168.1.128      ALLOW        Normal Traffic            Passed all checks
+[16:32:13] 192.168.1.129      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.2%)
+[16:32:21] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.8%)
+[16:32:23] 192.168.1.131      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 15
+[16:32:32] 192.168.1.132      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[16:32:40] 192.168.1.133      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (66.9%)
+[16:32:48] 192.168.1.134      ALLOW        Normal Traffic            Passed all checks
+[16:32:57] 192.168.1.135      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.5%)
+[16:33:05] 192.168.1.136      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (95.2%)
+[16:33:13] 192.168.1.137      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.7%)
+[16:33:22] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (89.2%)
+[16:33:30] 192.168.1.139      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[16:33:38] 192.168.1.140      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (79.7%)
+[16:33:47] 192.168.1.141      BLOCK        Low-Rate Flood            Model: Low-Rate DDoS — Low-Rate Flood (77.8%)
+[16:33:56] 192.168.1.142      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (93.9%)
+[16:34:06] 192.168.1.143      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.2%)
+[16:34:15] 192.168.1.144      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.2%)
+[16:34:24] 192.168.1.145      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.0%)
+[16:34:33] 192.168.1.146      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[16:34:41] 192.168.1.147      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.3%)
+[16:34:49] 192.168.1.148      ALLOW        Normal Traffic            Passed all checks
+[16:34:58] 192.168.1.149      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[16:35:06] 192.168.1.100      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.1%)
+[16:35:14] 192.168.1.101      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[16:35:22] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[16:35:31] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.4%)
+[16:35:39] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.7%)
+[16:35:48] 192.168.1.105      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.7%)
+[13:52:45] 192.168.1.100      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[13:52:53] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[13:53:01] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[13:53:10] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[13:53:18] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[13:53:26] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[13:53:33] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[13:53:40] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[13:53:42] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[13:53:49] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[13:53:56] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[13:54:03] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[13:54:10] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[13:54:12] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 15
+[13:54:19] 192.168.1.114      BLOCK        Low-Rate Flood            Model: Low-Rate DDoS — Low-Rate Flood (98.6%)
+[13:54:28] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[13:54:35] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[13:54:42] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[13:54:49] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[13:54:57] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[13:55:04] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[13:55:06] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 15
+[13:55:13] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[13:55:45] 192.168.1.100      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[13:55:53] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[13:56:01] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[13:56:09] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[13:56:16] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[13:56:24] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[13:56:32] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[13:56:40] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[13:56:42] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[13:56:50] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[13:56:58] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[13:57:05] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[13:57:13] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[13:57:15] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 15
+[13:57:23] 192.168.1.114      BLOCK        Low-Rate Flood            Model: Low-Rate DDoS — Low-Rate Flood (98.6%)
+[13:57:31] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[13:57:39] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[13:57:47] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[13:57:55] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[13:58:03] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[13:58:10] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[13:58:12] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 15
+[13:58:20] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[11:52:14] 192.168.1.100      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[11:52:22] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[11:52:31] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[11:55:21] 192.168.1.100      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[11:55:29] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[11:55:37] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[11:55:45] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[11:55:53] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[11:56:01] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[11:56:09] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[11:56:17] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[11:56:19] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[11:56:26] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[11:56:34] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[11:56:42] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[11:56:50] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[11:56:52] 192.168.1.113      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=11 < 15
+[11:57:00] 192.168.1.114      BLOCK        Low-Rate Flood            Model: Low-Rate DDoS — Low-Rate Flood (98.6%)
+[11:57:07] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[11:57:15] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[11:57:23] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[11:57:30] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[11:57:38] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[11:57:46] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[11:57:48] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 15
+[11:57:56] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[11:58:04] 192.168.1.123      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (81.9%)
+[11:58:06] 192.168.1.124      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[11:58:14] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.4%)
+[11:58:16] 192.168.1.126      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[11:58:23] 192.168.1.127      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.2%)
+[11:58:31] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (84.1%)
+[11:58:38] 192.168.1.129      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.2%)
+[11:58:46] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (68.3%)
+[11:58:53] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.1%)
+[11:59:01] 192.168.1.132      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.1%)
+[11:59:08] 192.168.1.133      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+[11:59:16] 192.168.1.134      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (94.6%)
+[11:59:23] 192.168.1.135      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (60.1%)
+[11:59:31] 192.168.1.136      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[11:59:38] 192.168.1.137      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[11:59:46] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.1%)
+[11:59:48] 192.168.1.139      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[11:59:56] 192.168.1.140      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:00:04] 192.168.1.141      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.9%)
+[12:00:12] 192.168.1.142      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.3%)
+[12:00:20] 192.168.1.143      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:00:27] 192.168.1.144      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.4%)
+[12:00:35] 192.168.1.145      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.3%)
+[12:00:43] 192.168.1.146      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[12:00:50] 192.168.1.147      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (66.2%)
+[12:00:58] 192.168.1.148      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.3%)
+[12:01:06] 192.168.1.149      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (81.3%)
+[12:01:14] 192.168.1.100      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (54.3%)
+[12:01:22] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (98.1%)
+[12:01:30] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[12:01:38] 192.168.1.103      ALLOW        Normal Traffic            Passed all checks
+[12:01:45] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.6%)
+[12:01:53] 192.168.1.105      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.6%)
+[12:02:01] 192.168.1.106      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.9%)
+[12:02:09] 192.168.1.107      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.7%)
+[12:02:16] 192.168.1.108      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.7%)
+[12:02:23] 192.168.1.109      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.4%)
+[12:02:31] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.0%)
+[12:02:38] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.9%)
+[12:02:46] 192.168.1.112      ALLOW        Normal Traffic            Passed all checks
+[12:02:53] 192.168.1.113      BLOCK        Manual Block              Manually blocked by admin
+[12:02:55] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=2 < 15
+[12:03:04] 192.168.1.115      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (95.0%)
+[12:03:12] 192.168.1.116      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.6%)
+[12:03:19] 192.168.1.117      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.5%)
+[12:03:27] 192.168.1.118      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (75.4%)
+[12:03:36] 192.168.1.119      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.3%)
+[12:03:43] 192.168.1.120      ALLOW        Normal Traffic            Passed all checks
+[12:03:52] 192.168.1.121      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.5%)
+[12:04:00] 192.168.1.122      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (83.4%)
+[12:04:08] 192.168.1.123      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (90.6%)
+[12:04:16] 192.168.1.124      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.2%)
+[12:04:24] 192.168.1.125      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.7%)
+[12:04:31] 192.168.1.126      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[12:04:39] 192.168.1.127      ALLOW        Normal Traffic            Passed all checks
+[12:04:47] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (79.0%)
+[12:04:55] 192.168.1.129      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (69.2%)
+[12:05:03] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[12:05:11] 192.168.1.131      ALLOW        Normal Traffic            Passed all checks
+[12:05:19] 192.168.1.132      ALLOW        Normal Traffic            Passed all checks
+[12:05:27] 192.168.1.133      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (95.2%)
+[12:05:35] 192.168.1.134      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.8%)
+[12:05:43] 192.168.1.135      BLOCK        ICMP Fragmentation        Model: High-Rate DDoS — ICMP Fragmentation (99.9%)
+[12:05:50] 192.168.1.136      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.7%)
+[12:05:58] 192.168.1.137      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.1%)
+[12:06:06] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.4%)
+[12:06:14] 192.168.1.139      ALLOW        Normal Traffic            Passed all checks
+[12:06:21] 192.168.1.140      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.4%)
+[12:06:29] 192.168.1.141      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (93.6%)
+[12:06:36] 192.168.1.142      ALLOW        Normal Traffic            Passed all checks
+[12:06:44] 192.168.1.143      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.5%)
+[12:06:51] 192.168.1.144      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (89.1%)
+[12:06:59] 192.168.1.145      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.1%)
+[12:07:07] 192.168.1.146      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.8%)
+[12:07:34] 192.168.1.100      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[12:07:42] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[12:07:50] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[12:07:57] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[12:08:06] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[12:08:14] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[12:08:22] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[12:08:29] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:08:31] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[12:08:39] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[12:08:47] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[12:08:55] 192.168.1.111      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.0%)
+[12:09:03] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[12:09:11] 192.168.1.113      BLOCK        Manual Block              Manually blocked by admin
+[12:09:18] 192.168.1.114      BLOCK        Low-Rate Flood            Model: Low-Rate DDoS — Low-Rate Flood (98.6%)
+[12:09:26] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:09:34] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[12:09:43] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[12:09:51] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[12:09:59] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[12:10:08] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[12:10:10] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 15
+[12:10:18] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[12:10:26] 192.168.1.123      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (81.9%)
+[12:10:28] 192.168.1.124      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[12:10:36] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.4%)
+[12:10:38] 192.168.1.126      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[12:10:45] 192.168.1.127      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.2%)
+[12:10:53] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (84.1%)
+[12:11:00] 192.168.1.129      BLOCK        Manual Block              Manually blocked by admin
+[12:11:08] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (68.3%)
+[12:11:15] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.1%)
+[12:11:24] 192.168.1.132      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.1%)
+[12:11:32] 192.168.1.133      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+[12:11:40] 192.168.1.134      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (94.6%)
+[12:11:48] 192.168.1.135      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (60.1%)
+[12:11:56] 192.168.1.136      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:12:05] 192.168.1.137      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[12:12:14] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.1%)
+[12:12:16] 192.168.1.139      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[12:12:26] 192.168.1.140      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:12:36] 192.168.1.141      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.9%)
+[12:12:46] 192.168.1.142      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.3%)
+[12:12:55] 192.168.1.143      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:13:05] 192.168.1.144      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.4%)
+[12:13:14] 192.168.1.145      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.3%)
+[12:13:23] 192.168.1.146      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[12:13:32] 192.168.1.147      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (66.2%)
+[12:13:41] 192.168.1.148      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.3%)
+[12:13:49] 192.168.1.149      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (81.3%)
+[12:13:58] 192.168.1.100      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (54.3%)
+[12:14:06] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (98.1%)
+[12:14:14] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[12:14:22] 192.168.1.103      ALLOW        Normal Traffic            Passed all checks
+[12:14:31] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.6%)
+[12:14:39] 192.168.1.105      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.6%)
+[12:14:47] 192.168.1.106      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.9%)
+[12:14:55] 192.168.1.107      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.7%)
+[12:15:04] 192.168.1.108      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.7%)
+[12:15:12] 192.168.1.109      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.4%)
+[12:15:20] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.0%)
+[12:15:28] 192.168.1.111      BLOCK        Manual Block              Manually blocked by admin
+[12:15:36] 192.168.1.112      ALLOW        Normal Traffic            Passed all checks
+[12:15:45] 192.168.1.113      BLOCK        Manual Block              Manually blocked by admin
+[12:15:47] 192.168.1.114      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=2 < 15
+[12:15:55] 192.168.1.115      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (95.0%)
+[12:16:04] 192.168.1.116      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.6%)
+[12:16:12] 192.168.1.117      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.5%)
+[12:16:19] 192.168.1.118      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (75.4%)
+[12:16:27] 192.168.1.119      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.3%)
+[12:16:37] 192.168.1.120      ALLOW        Normal Traffic            Passed all checks
+[12:16:45] 192.168.1.121      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.5%)
+[12:16:54] 192.168.1.122      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (83.4%)
+[12:17:02] 192.168.1.123      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (90.6%)
+[12:17:10] 192.168.1.124      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.2%)
+[13:45:53] 192.168.1.100      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[13:46:02] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[13:46:10] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[13:46:19] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[13:46:27] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[13:46:34] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[13:46:42] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[13:46:50] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[13:46:52] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[13:47:00] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[13:47:07] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[13:47:14] 192.168.1.111      BLOCK        Manual Block              Manually blocked by admin
+[13:47:21] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[13:47:29] 192.168.1.113      BLOCK        Manual Block              Manually blocked by admin
+[13:47:37] 192.168.1.114      BLOCK        Low-Rate Flood            Model: Low-Rate DDoS — Low-Rate Flood (98.6%)
+[13:47:44] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:38:45] 192.168.1.100      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[12:38:52] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[12:39:00] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[12:39:07] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[12:39:15] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[12:39:25] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[12:39:33] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[12:39:41] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:39:43] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[12:39:52] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[12:40:01] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[12:40:09] 192.168.1.111      BLOCK        Manual Block              Manually blocked by admin
+[12:40:17] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[12:40:26] 192.168.1.113      BLOCK        Manual Block              Manually blocked by admin
+[12:40:35] 192.168.1.114      BLOCK        Low-Rate Flood            Model: Low-Rate DDoS — Low-Rate Flood (98.6%)
+[12:40:42] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:40:50] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[12:41:00] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[12:41:09] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
+[12:41:16] 192.168.1.119      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.6%)
+[12:41:25] 192.168.1.120      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.3%)
+[12:41:27] 192.168.1.121      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=3 < 15
+[12:41:34] 192.168.1.122      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.3%)
+[12:41:43] 192.168.1.123      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (81.9%)
+[12:41:45] 192.168.1.124      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[12:41:53] 192.168.1.125      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.4%)
+[12:41:55] 192.168.1.126      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=4 < 15
+[12:42:02] 192.168.1.127      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.2%)
+[12:42:10] 192.168.1.128      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (84.1%)
+[12:42:18] 192.168.1.129      BLOCK        Manual Block              Manually blocked by admin
+[12:42:25] 192.168.1.130      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (68.3%)
+[12:42:33] 192.168.1.131      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.1%)
+[12:42:40] 192.168.1.132      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.1%)
+[12:42:47] 192.168.1.133      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (99.1%)
+[12:42:55] 192.168.1.134      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (94.6%)
+[12:43:02] 192.168.1.135      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (60.1%)
+[12:43:10] 192.168.1.136      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:43:17] 192.168.1.137      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[12:43:25] 192.168.1.138      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.1%)
+[12:43:27] 192.168.1.139      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[12:43:34] 192.168.1.140      BLOCK        Manual Block              Manually blocked by admin
+[12:43:42] 192.168.1.141      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.9%)
+[12:43:49] 192.168.1.142      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (92.3%)
+[12:43:56] 192.168.1.143      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:44:03] 192.168.1.144      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (98.4%)
+[12:44:10] 192.168.1.145      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.3%)
+[12:44:17] 192.168.1.146      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[12:44:25] 192.168.1.147      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (66.2%)
+[12:44:32] 192.168.1.148      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.3%)
+[12:44:40] 192.168.1.149      BLOCK        Traffic Surge             Model: Flash Crowd — Traffic Surge (81.3%)
+[12:44:48] 192.168.1.100      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (54.3%)
+[12:44:55] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (98.1%)
+[12:45:02] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[12:45:10] 192.168.1.103      ALLOW        Normal Traffic            Passed all checks
+[12:45:18] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (91.6%)
+[12:45:25] 192.168.1.105      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.6%)
+[12:45:33] 192.168.1.106      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.9%)
+[12:45:40] 192.168.1.107      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.7%)
+[12:45:48] 192.168.1.108      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (95.7%)
+[12:45:55] 192.168.1.109      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (96.4%)
+[12:50:35] 192.168.1.100      BLOCK        UDP Flood                 Model: High-Rate DDoS — UDP Flood (99.8%)
+[12:50:42] 192.168.1.101      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (67.5%)
+[12:50:49] 192.168.1.102      BLOCK        Manual Block              Manually blocked by admin
+[12:50:57] 192.168.1.103      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.6%)
+[12:51:04] 192.168.1.104      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.4%)
+[12:51:12] 192.168.1.105      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.3%)
+[12:51:19] 192.168.1.106      BLOCK        HTTP Flood (Slowloris)    Model: Low-Rate DDoS — HTTP Flood (Slowloris) (94.6%)
+[12:51:26] 192.168.1.107      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:51:28] 192.168.1.108      BLOCK        Rule Violation            Rule: Adaptive: Tiny packet=8 < 15
+[12:51:36] 192.168.1.109      ALLOW        Normal Traffic            Passed all checks
+[12:51:43] 192.168.1.110      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (98.9%)
+[12:51:50] 192.168.1.111      BLOCK        Manual Block              Manually blocked by admin
+[12:51:57] 192.168.1.112      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (97.6%)
+[12:52:05] 192.168.1.113      BLOCK        Manual Block              Manually blocked by admin
+[12:52:12] 192.168.1.114      BLOCK        Low-Rate Flood            Model: Low-Rate DDoS — Low-Rate Flood (98.6%)
+[12:52:20] 192.168.1.115      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (99.7%)
+[12:52:27] 192.168.1.116      BLOCK        High-Rate Flood           Model: High-Rate DDoS — High-Rate Flood (94.9%)
+[12:52:34] 192.168.1.117      BLOCK        DoS TCP Flood             Model: Low-Rate DDoS — DoS TCP Flood (96.8%)
+[12:52:42] 192.168.1.118      ALLOW        Normal Traffic            Passed all checks
